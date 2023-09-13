@@ -59,6 +59,7 @@ header {
   height: auto;
   display: block;
   object-fit: cover;
+  filter: brightness(50%);
 }
 
 .text-presentation {
@@ -74,7 +75,6 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: justify;
-  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
 }
 
@@ -133,6 +133,12 @@ header {
   width: 250px;
 }
 
+/*Efeito de zoom quando passar o mouse*/
+.card:hover img {
+  transform: scale(1.3); 
+  transition: 1s all ease;
+}
+
 footer{
   display: flex;
   align-items: center;
@@ -143,4 +149,40 @@ footer{
 
 footer p{
   font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+  .store-presentation {
+    height: 250px;
+  }
+  .text-presentation {
+    padding: 10px;
+  }
+  .title {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  
+  .container {
+    padding: 5px;
+  }
+  .card {
+    width: 90%;
+  }
+  .card img {
+    width: 80%;
+  }
+}
+
+/* Estilos para tablets e telas maiores */
+@media (min-width: 769px) {
+  /* Adicione aqui seus estilos para telas maiores */
 }

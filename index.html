@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JordanShoes</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <header>
+    <header class="header-card">
       <div class="discount card-header">
         <span class="discount-text">Ganhe R$ 10,00 de desconto no frete</span>
       </div>
@@ -47,4 +49,18 @@
       <p>Todos os direitos reservados.</p>
     </footer>
   </body>
+
+  <script>
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      reset: true,
+    });
+    ScrollReveal().reveal(".header-card", { delay: 100 });
+    ScrollReveal().reveal(".store-presentation", { delay: 200 });
+    ScrollReveal().reveal(".title", { delay: 300 });
+    ScrollReveal().reveal(".text", { delay: 300 });
+    ScrollReveal().reveal(".container-main", { delay: 400 });
+  </script>
 </html>
