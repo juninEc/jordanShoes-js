@@ -181,8 +181,3 @@ footer p{
     width: 80%;
   }
 }
-
-/* Estilos para tablets e telas maiores */
-@media (min-width: 769px) {
-  /* Adicione aqui seus estilos para telas maiores */
-}
