@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(fontes/Montserrat-Bold.ttf), url(fontes/Montserrat-Medium.ttf), url(fontes/Montserrat-SemiBold.ttf);
+}
 :root {
   --blue: #3ea1db;
   --bgSite: #f6f6f6;
@@ -13,6 +17,9 @@
   --text: #474747;
 }
 
+body{
+  font-family: Montserrat; 
+}
 /* HEADER */
 header {
   display: flex;
@@ -36,6 +43,7 @@ header {
 }
 .discount-text {
   font-size: 15px;
+  font-weight: medium;
 }
 .name {
   font-size: 25px;
@@ -59,7 +67,7 @@ header {
   height: auto;
   display: block;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 
 .text-presentation {
@@ -81,12 +89,14 @@ header {
 .title {
   padding: 20px;
   font-size: 40px;
+  font-weight: bold;
 }
 
 .text {
   padding: 0px 0px 0px 20px;
   font-size: 20px;
   width: 50%;
+  font-weight: medium;
 }
 
 .container {
